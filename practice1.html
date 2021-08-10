@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Appointment</title>
+    <style>
+        #navbar{
+            /* display: flex; */
+            
+            /* background-color: rgba(238, 235, 235, 0.979); */
+            height: 58px;
+        }
+        #navbar::before{
+            content: "";
+            background-color: rgba(238, 235, 235, 0.979);
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 56px;
+            width: 100%;
+            z-index: -1;
+
+        }
+        #navbar img{
+            display: flex;
+            margin: -23px 10px -6px -17px;
+            height: 65px;
+            width: 100px;
+            position: absolute;
+        }
+        /* ul{
+            overflow: auto;
+        } */
+        #navhome{
+            margin: 0px 12px 0px 52px;
+        }
+        ul li{
+            float: left;
+            /* display: block; */
+            list-style: none;
+            /* border: 1px solid black; */
+            padding: 3px 6px;
+            margin: 0px 12px;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 3px
+        } 
+        ul li:hover{
+            border: 1px solid black;
+            padding: -2px 0px;
+            background-color:black;
+            color: white;
+            cursor: pointer;
+            border-radius: 7px;
+            /* font: bold; */
+            font-family:cursive;
+        }
+        #search{
+            float: right;
+            /* color: red;
+             */
+        }
+        #search input{
+            margin: 0px 12px;
+            border-radius: 5px;
+            padding: 5px 8px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        #search input:hover{
+            background-color: rgb(221, 219, 219);
+            border:2px solid black ;
+            /* cursor: progress; */
+            cursor:text;
+        }
+        #Register::before{
+            content: "";
+            background: url("heroback1.jpg") no-repeat center center/cover;
+            position: absolute;
+            height: 639px;
+            width: 1330px;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            opacity: 0.2;
+
+        }
+        #Rbox{
+            display: flex;
+            /* border: 2px solid rgb(121, 110, 110);
+            border-radius: 15px; */
+            justify-content: center;
+            align-items: center;
+            margin-top: 21px;
+        }
+        #Register h1{
+            text-align: center;
+            margin: 3px;
+            font-size: 37px;
+            font-family: sans-serif;
+        }
+        #Rbox input{
+            width: 100%;
+            /* font-family: fantasy; */
+            border: 2px solid;
+            border-radius: 8px;
+            font-size:18px;
+            margin: 1px 2px 8px 2px;
+            text-decoration: none;
+        }
+        #Rbox input:hover{
+            cursor:text;
+            background-color: rgb(230, 234, 238);
+        }
+        #Rbox label{
+            font-size: 23px;
+            font-family: fantasy;
+        }
+        #Register button{
+            border: 1px solid black;
+            display: block;
+            margin: 20px auto;
+            background-color: black;
+            color: rgb(235, 229, 229);
+            padding: 3px 15px;
+            border-radius: 5px;
+            font-size: 21px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #Register button:hover{
+            cursor: pointer;
+            border: 2px solid rgb(119, 109, 109);
+            background-color: rgb(32, 32, 32);
+
+        }
+        /* #copyr::before{
+            content: "";
+            position: absolute;
+            background-color: black ;
+            top: 631px;
+            margin-top: -27px;
+            height: 30px;
+            width: 100%;
+            z-index: -1;
+            left: 0;
+        } */
+        #copyr{
+
+            background: black no-repeat center center/cover;
+            text-align: center;
+            color: cornsilk;
+            padding: 7px 0px;
+            font-family:serif;
+            font-weight: bold;
+            text-align: center;
+            /* justify-content: center; */
+        }
+        </style>
+        
+</head>
+
+<body>
+    
+    <nav id="navbar">
+        <img src="herologo.svg" alt="">
+        <ul>
+            <li id="navhome">Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>More</li>
+            <li>Contact Us</li>
+        </ul>
+        <div id="search">
+            <input type="text" placeholder="Search..">
+        </div>
+    </nav>
+    <section id="Register">
+        <h1>Book your appointment now!!</h1>
+        <div id="Rbox">
+            <form action="">
+                <div class="appoint">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name" spellcheck="false">
+                </div>
+                <div class="appoint">
+                    <label for="mobile no.">Mobile No.</label>
+                    <input type="number" name="mobile no." id="mobileno" placeholder="Enter Your Mobile Number" spellcheck="false">
+                </div>
+                <div class="appoint">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" placeholder="Enter Your Address" spellcheck="false">
+                </div>
+                <div class="appoint">
+                    <label for="gender">Gender</label>
+                    <input type="text" name="gender" id="gender" placeholder="Enter Your Gender" spellcheck="false">
+                </div>
+                <div class="appoint">
+                    <label for="Budget">Budget</label>
+                    <input type="number" name="budget" id="budget" placeholder="Approximate Budget" spellcheck="false">
+                </div>
+                <div class="appoint">
+                    <label for="Date">Date & Time</label>
+                    <input type="date" name="Date" id="Date" >
+                </div>
+            </form>
+        </div>
+        <button type="submit" value="butoton">Submit</button>
+    </section>
+    <footer>
+        <div id="copyr">
+            Copyright &copy; www.Hero.com.All rights reserverd.
+        </div>
+    </footer>
+</body>
+</html>
