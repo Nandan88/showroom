@@ -7,136 +7,341 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hero Appointment</title>
     <style>
-        #navbar{
-            /* display: flex; */
-            
-            /* background-color: rgba(238, 235, 235, 0.979); */
-            height: 58px;
-        }
-        #navbar::before{
-            content: "";
-            background-color: rgba(238, 235, 235, 0.979);
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 56px;
-            width: 100%;
-            z-index: -1;
-
-        }
-        #navbar img{
-            display: flex;
-            margin: -23px 10px -6px -17px;
-            height: 65px;
-            width: 100px;
-            position: absolute;
-        }
-        /* ul{
-            overflow: auto;
-        } */
-        #navhome{
-            margin: 0px 12px 0px 52px;
-        }
-        ul li{
-            float: left;
-            /* display: block; */
-            list-style: none;
-            /* border: 1px solid black; */
-            padding: 3px 6px;
-            margin: 0px 12px;
-            font-family: sans-serif;
-            font-weight: bold;
-            font-size: 18px;
-            border-radius: 3px
-        } 
-        ul li:hover{
-            border: 1px solid black;
-            padding: -2px 0px;
-            background-color:black;
-            color: white;
-            cursor: pointer;
-            border-radius: 7px;
-            /* font: bold; */
-            font-family:cursive;
-        }
-        #search{
-            float: right;
-            /* color: red;
-             */
-        }
-        #search input{
-            margin: 0px 12px;
-            border-radius: 5px;
-            padding: 5px 8px;
-            font-size: 13px;
-            font-weight: bold;
-        }
-        #search input:hover{
-            background-color: rgb(221, 219, 219);
-            border:2px solid black ;
-            /* cursor: progress; */
-            cursor:text;
-        }
-        #Register::before{
-            content: "";
-            background: url("heroback1.jpg") no-repeat center center/cover;
-            position: absolute;
-            height: 639px;
-            width: 1330px;
-            left: 0;
-            top: 0;
-            z-index: -1;
-            opacity: 0.2;
-
-        }
-        #Rbox{
-            display: flex;
-            /* border: 2px solid rgb(121, 110, 110);
-            border-radius: 15px; */
-            justify-content: center;
-            align-items: center;
-            margin-top: 21px;
-        }
-        #Register h1{
-            text-align: center;
-            margin: 3px;
-            font-size: 37px;
-            font-family: sans-serif;
-        }
-        #Rbox input{
-            width: 100%;
-            /* font-family: fantasy; */
-            border: 2px solid;
-            border-radius: 8px;
-            font-size:18px;
-            margin: 1px 2px 8px 2px;
+            *{
+            padding: 0;
+            margin: 0;
             text-decoration: none;
-        }
-        #Rbox input:hover{
-            cursor:text;
-            background-color: rgb(230, 234, 238);
-        }
-        #Rbox label{
-            font-size: 23px;
-            font-family: fantasy;
-        }
-        #Register button{
-            border: 1px solid black;
-            display: block;
-            margin: 20px auto;
-            background-color: black;
-            color: rgb(235, 229, 229);
-            padding: 3px 15px;
-            border-radius: 5px;
-            font-size: 21px;
-            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        }
-        #Register button:hover{
-            cursor: pointer;
-            border: 2px solid rgb(119, 109, 109);
-            background-color: rgb(32, 32, 32);
+            list-style: none;
+            box-sizing: border-box;
+            }
+            @media only screen and (min-width:789px){
+                #navbar{
+                /* display: flex; */
+                
+                /* background-color: rgba(238, 235, 235, 0.979); */
+                height: 58px;
+                
+            }
+            
+            #navbar::before{
+                
+                content: "";
+                background-color: rgba(238, 235, 235, 0.979);
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 65px;
+                width: 100%;
+                z-index: -1;
 
+            }
+            #navbar img{
+                /* display: flex;
+                margin: -23px 10px -6px -17px;
+                height: 65px;
+                width: 100px;
+                position: absolute; */
+
+                float: left;
+                height: 60px;
+                width: 58px;
+            }
+            /* ul{
+                overflow: auto;
+            } */
+            nav ul{
+                float:left;
+            }
+            /* #navhome{
+                margin: 0px 12px 0px 52px;
+            } */
+            ul li{
+                /* float: left; */
+                /* border: 1px solid black; */
+                /* padding: 3px 6px; */
+                
+                /* display: inline-block;
+                line-height: 62px;
+                margin: 0px 12px;
+                font-family: sans-serif;
+                font-weight: bold;
+                font-size: 18px;
+                border-radius: 3px */
+
+                
+                
+                float: left;
+                list-style: none;
+                
+                padding: 3px 6px;
+                margin: 15px 12px;
+                
+                font-family: sans-serif;
+                font-weight: bold;
+                /* line-height: 10px; */
+                font-size: 18px;
+                /* border-radius: 3px */
+            } 
+            ul li:hover{
+                border: 1px solid black;
+                padding: -2px 0px;
+                background-color:black;
+                color: white;
+                cursor: pointer;
+                border-radius: 7px;
+                /* font: bold; */
+                font-family:cursive;
+            }
+            #search{
+                float: right;
+                line-height: 61px;
+                /* color: red;
+                */
+            }
+            #search input{
+                margin: 0px 12px;
+                border-radius: 5px;
+                padding: 5px 8px;
+                font-size: 13px;
+                font-weight: bold;
+            }
+            #search input:hover{
+                background-color: rgb(221, 219, 219);
+                border:2px solid black ;
+                /* cursor: progress; */
+                cursor:text;
+            }
+            #Register::before{
+                content: "";
+                background: url("heroback1.jpg") no-repeat center center/cover;
+                position: absolute;
+                height: 639px;
+                /* width: 1330px; */
+                width: 100%;
+                left: 0;
+                top: 0;
+                z-index: -1;
+                opacity: 0.2;
+
+            }
+            #Rbox{
+                display: flex;
+                /* border: 2px solid rgb(121, 110, 110);
+                border-radius: 15px; */
+                justify-content: center;
+                align-items: center;
+                margin-top: 21px;
+            }
+            #Register h1{
+                text-align: center;
+                margin: 11px 0px;
+                font-size: 37px;
+                font-family: sans-serif;
+            }
+            #Rbox input{
+                width: 100%;
+                /* font-family: fantasy; */
+                border: 2px solid;
+                border-radius: 8px;
+                font-size:18px;
+                margin: 1px 2px 8px 2px;
+                text-decoration: none;
+            }
+            #Rbox input:hover{
+                cursor:text;
+                background-color: rgb(230, 234, 238);
+            }
+            #Rbox label{
+                font-size: 23px;
+                font-family: fantasy;
+            }
+            #Register button{
+                border: 1px solid black;
+                display: block;
+                margin: 20px auto;
+                background-color: black;
+                color: rgb(235, 229, 229);
+                padding: 3px 15px;
+                border-radius: 5px;
+                font-size: 21px;
+                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            #Register button:hover{
+                cursor: pointer;
+                border: 2px solid rgb(119, 109, 109);
+                background-color: rgb(32, 32, 32);
+
+            }
         }
+
+        @media only screen and (max-width:789px){
+            #navbar{
+                /* display: flex; */
+                
+                /* background-color: rgba(238, 235, 235, 0.979); */
+                height: 58px;
+                /* flex-direction: column; */
+                /* justify-content:center; */
+                
+                
+            }
+            #navbar::before{
+                
+                content: "";
+                background-color: rgba(238, 235, 235, 0.979);
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 250px;
+                width: 100%;
+                z-index: -1;
+            
+            }
+            #navbar img{
+               
+                float: left;
+                height: 68px;
+                width: 68px;
+            }
+
+            .toggle-button{
+                position: absolute;
+                top: 30px;
+                right: 100px;
+               
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 30px;
+                height: 21px;
+             
+            }
+            .toogle-button .bar{
+                height: 3px;
+                width: 100%;
+                background-color:black;
+                border-radius: 10px;
+            }
+
+            ul{
+                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                
+                
+            }
+            /* nav ul{
+                float:left;
+            } */
+            #navhome{
+                margin-top: 90px;
+            }
+            ul li{
+                margin-top: 10px;
+                margin-right: 20px;
+                padding: 0px 0px;
+                font-family: sans-serif;
+                justify-content: right;
+                font-weight: bold;
+                
+            } 
+            ul li:hover{
+                
+                border: 1px solid black;
+                padding: -2px 0px;
+                background-color:black;
+                color: white;
+                cursor: pointer;
+                border-radius: 7px;
+                /* font: bold; */
+                font-family:cursive;
+            }
+            #search{
+                display: block;
+                position: absolute;
+                /* float: right; */
+                top: 28px;
+                right: 15px;
+                /* line-height: 61px; */
+                /* color: red;
+                */
+            }
+            #search input{
+                margin: 0px 12px;
+                border-radius: 5px;
+                padding: 5px 8px;
+                font-size: 13px;
+                font-weight: bold;
+            }
+            #search input:hover{
+                background-color: rgb(221, 219, 219);
+                border:2px solid black ;
+                /* cursor: progress; */
+                cursor:text;
+            }
+            #Register::before{
+                content: "";
+                background: url("heroback1.jpg") no-repeat center center/cover;
+                position: absolute;
+                height: 639px;
+                /* width: 1330px; */
+                width: 100%;
+                left: 0;
+                top: 150px;
+                z-index: -1;
+                opacity: 0.2;
+
+            }
+            #Rbox{
+                display: flex;
+                justify-content: center;
+                
+            }
+            h1{
+                margin-top:200px;
+                margin-bottom: 30px;
+                text-align: center;
+                font-size: 37px;
+                font-family: sans-serif;
+            }
+            #Rbox input{
+                width: 100%;
+                /* font-family: fantasy; */
+                border: 2px solid;
+                border-radius: 8px;
+                font-size:18px;
+                margin: 1px 2px 8px 2px;
+                text-decoration: none;
+            }
+            #Rbox input:hover{
+                cursor:text;
+                background-color: rgb(230, 234, 238);
+            }
+            #Rbox label{
+                font-size: 23px;
+                font-family: fantasy;
+            }
+            #Register button{
+                border: 1px solid black;
+                display: block;
+                margin: 20px auto;
+                background-color: black;
+                color: rgb(235, 229, 229);
+                padding: 3px 15px;
+                border-radius: 5px;
+                font-size: 21px;
+                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            #Register button:hover{
+                cursor: pointer;
+                border: 2px solid rgb(119, 109, 109);
+                background-color: rgb(32, 32, 32);
+
+            }
+        }
+        
         /* #copyr::before{
             content: "";
             position: absolute;
@@ -167,6 +372,11 @@
     
     <nav id="navbar">
         <img src="herologo.svg" alt="">
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
         <ul>
             <li id="navhome">Home</li>
             <li>About</li>
@@ -178,8 +388,8 @@
             <input type="text" placeholder="Search..">
         </div>
     </nav>
+    <h1>Book your appointment now!!</h1>
     <section id="Register">
-        <h1>Book your appointment now!!</h1>
         <div id="Rbox">
             <form action="">
                 <div class="appoint">
